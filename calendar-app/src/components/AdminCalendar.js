@@ -3,7 +3,7 @@ import { Paper, Typography, Box, Button, CircularProgress } from '@mui/material'
 import { format, startOfWeek, addWeeks, subWeeks, addDays, isBefore, endOfDay } from 'date-fns';
 import { useNavigate } from 'react-router-dom';
 
-const API_URL = 'http://localhost:4000/api/slots';
+const API_URL = '/api/slots';
 
 const AdminCalendar = () => {
   const [currentDate, setCurrentDate] = useState(new Date());
