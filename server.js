@@ -50,8 +50,8 @@ app.post('/api/slots', (req, res) => {
 // Serve React build static files
 app.use(express.static(path.join(__dirname, 'calendar-app', 'build')));
 
-// Catch-all for client-side routing
-app.get('/*', (req, res) => {
+// Handle all other routes
+app.use((req, res) => {
   res.sendFile(path.join(__dirname, 'calendar-app', 'build', 'index.html'));
 });
 
