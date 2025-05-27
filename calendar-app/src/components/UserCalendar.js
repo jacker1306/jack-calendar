@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Paper, Typography, Box, Button, CircularProgress } from '@mui/material';
 import { format, startOfWeek, addWeeks, subWeeks, addDays, isBefore, endOfDay } from 'date-fns';
 
-const API_URL = 'http://localhost:4000/api/slots';
+const API_URL = '/api/slots';
 
 const UserCalendar = () => {
   const [currentDate, setCurrentDate] = useState(new Date());
